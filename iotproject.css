@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(240, 247, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 40px 20px;
+}
+
+.iot-project {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.project-container {
+    width: 90%;
+    max-width: 1000px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-container h1 {
+    color: rgb(0, 122, 252);
+    font-size: 35px;
+}
+
+.project-container hr {
+    margin: 15px 0;
+    border-color: rgb(0, 122, 252);
+    opacity: 0.5;
+}
+
+.project-container p {
+    line-height: 1.8rem;
+    margin-top: 10px;
+    color: rgb(70, 70, 70);
+}
+
+.project-container h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: rgb(0, 122, 252);
+}
+
+.project-container ul {
+    padding-left: 20px;
+    line-height: 2rem;
+}
+
+.project-image {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.project-image img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+pre {
+    background-color: rgb(235, 243, 252);
+    padding: 20px;
+    border-radius: 12px;
+    overflow-x: auto;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th,
+table td {
+    border: 1px solid rgb(200, 200, 200);
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    background-color: rgb(0, 122, 252);
+    color: white;
+}
+
+/* Responsive */
+
+@media(max-width:768px) {
+
+    .project-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .project-container h1 {
+        font-size: 25px;
+        line-height: 2.2rem;
+    }
+
+    .project-container p,
+    .project-container ul {
+        font-size: 14px;
+    }
+
+    pre {
+        font-size: 12px;
+    }
+
+    table th,
+    table td {
+        font-size: 13px;
+        padding: 10px;
+    }
+}

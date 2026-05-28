@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo a {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.logo a:hover {
+    color: rgb(0, 122, 252);
+}
+
+.items {
+    display: flex;
+    gap: 60px;
+    font-size: 18px;
+}
+
+.items a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.items a:hover {
+    color: rgb(0, 122, 252);
+}
+
+/* HERO SECTION */
+
+.my-introduction {
+    position: relative;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.about-me {
+    position: absolute;
+    top: 45%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 2.8rem;
+    font-size: 25px;
+}
+
+.about-me b {
+    color: rgb(0, 122, 252);
+}
+
+.about-me hr {
+    width: 65%;
+    border-color: rgb(0, 122, 252);
+    opacity: 60%;
+    margin-top: 10px;
+}
+
+/* BUTTONS */
+
+.buttons {
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.buttons a {
+    width: 150px;
+    height: 35px;
+    background-color: rgb(0, 122, 252);
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1mm solid black;
+    transition: 0.3s;
+}
+
+#btn {
+    background-color: white;
+    color: rgb(0, 122, 252);
+}
+
+#btn:hover {
+    color: white;
+    background-color: rgb(0, 122, 252);
+}
+
+.buttons a:hover {
+    cursor: pointer;
+    color: rgb(0, 122, 252);
+    background-color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* PROJECT SECTION */
+
+.project_section {
+    width: 100%;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.section-container-1 {
+    padding: 20px 25px;
+    line-height: 1.8rem;
+}
+
+.section-container-1 hr {
+    border-color: rgb(0, 122, 252);
+    margin-top: 10px;
+    opacity: 60%;
+    width: 200px;
+}
+
+.section-container-2 {
+    width: 100%;
+    padding: 45px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.section-container-2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.porfolio {
+    width: 30%;
+    min-width: 280px;
+    background-color: white;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.porfolio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+}
+
+.porfolio-card {
+    padding: 10px;
+}
+
+.porfolio-card h2 {
+    line-height: 50px;
+}
+
+.porfolio p {
+    color: grey;
+    font-size: 14px;
+}
+
+/* DEMO BUTTONS */
+
+.demo-button {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.demo-button a {
+    width: 90px;
+    height: 35px;
+    text-decoration: none;
+    background: rgb(0, 122, 252);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#white {
+    background-color: rgb(225, 238, 252);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px) {
+
+    .navbar {
+        height: auto;
+    }
+
+    .main-container {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .items {
+        gap: 25px;
+        font-size: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-me {
+        position: static;
+        transform: none;
+        text-align: center;
+        padding: 20px;
+        font-size: 16px;
+        line-height: 2rem;
+    }
+
+    .about-me hr {
+        margin: 10px auto;
+    }
+
+    .buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .section-container-1 {
+        text-align: center;
+    }
+
+    .section-container-1 hr {
+        margin: 10px auto;
+    }
+
+    .section-container-2 {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .porfolio {
+        width: 100%;
+    }
+
+    .demo-button {
+        justify-content: center;
+    }
+}

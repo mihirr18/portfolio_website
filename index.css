@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo a {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.logo a:hover {
+    color: rgb(0, 122, 252);
+}
+
+.logo:hover {
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+
+.items {
+    display: flex;
+    gap: 60px;
+    font-size: 18px;
+}
+
+.items a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.5s;
+}
+
+.items a:hover {
+    color: rgb(0, 122, 252);
+    transform: translateY(-3px);
+}
+
+/* HERO SECTION */
+
+.my-introduction {
+    position: relative;
+    width: 100%;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* DARK OVERLAY */
+
+.my-introduction::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.35); */
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* ABOUT SECTION */
+
+.about-me {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color:black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 2.8rem;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.about-me b {
+    color: rgb(0, 122, 252);
+}
+
+.about-me h2 {
+    line-height: 3rem;
+}
+
+.about-me hr {
+    width: 65%;
+    border-color: rgb(0, 122, 252);
+    opacity: 60%;
+    margin-top: 10px;
+}
+
+.buttons {
+    max-width: 100%;
+    height: 35px;
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.buttons a {
+    width: 150px;
+    height: 35px;
+    background-color: rgb(0, 122, 252);
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1mm solid black;
+    transition: 0.3s;
+}
+
+#btn {
+    background-color: white;
+    color: rgb(0, 122, 252);
+}
+
+#btn:hover {
+    color: white;
+    background-color: rgb(0, 122, 252);
+}
+
+.buttons a:hover {
+    cursor: pointer;
+    color: rgb(0, 122, 252);
+    background-color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width:768px) {
+
+    .navbar {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-container {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .items {
+        align-items: center;
+        gap: 25px;
+        font-size: 14px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        height: 100vh;
+    }
+
+    .about-me {
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        font-size: 14px;
+        line-height: 1.8rem;
+        width: 90%;
+        text-align: center;
+    }
+
+    .about-me h1 {
+        font-size: 28px;
+    }
+
+    .about-me h2 {
+        font-size: 18px;
+        line-height: 2rem;
+    }
+
+    .about-me h3 {
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+
+    .about-me hr {
+        margin: 10px auto;
+    }
+
+    .buttons {
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}

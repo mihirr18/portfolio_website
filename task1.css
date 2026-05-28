@@ -1,0 +1,789 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    min-height: 30%;
+    width: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+img {
+    width: 50px;
+    min-height: 50px;
+    margin-left: 50px;
+}
+
+.category {
+    display: flex;
+    justify-items: flex-start;
+    gap: 20px;
+    margin-right: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+}
+
+a:hover {
+    color: orangered;
+}
+
+.logo-box {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    cursor: pointer;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo-box:hover {
+    color: orangered;
+}
+
+button {
+    margin-right: 10px;
+    border: 0;
+    font-size: 18px;
+    padding: 6px 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.register {
+    background-color: white;
+    color: gray;
+}
+
+.register:hover {
+    background-color: white;
+    cursor: pointer;
+    color: orangered;
+}
+
+.login {
+    background-color: orangered;
+    color: gray;
+    border-radius: 50px;
+}
+
+.login:hover {
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.menu {
+    background-color: white;
+    border: 0 solid;
+    color: gray;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+.menu:hover {
+    border: 0;
+    color: orangered;
+}
+
+.photo {
+    width: auto;
+    height: 500px;
+    background: linear-gradient(to right, rgba(13, 11, 114, 0.7), rgba(8, 8, 148, 0.7)), url(close-up-young-business-team-working.jpg.jpeg);
+    background-size: cover;
+}
+
+.write {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.paragraph {
+    margin-top: 10%;
+    color: white;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.container {
+    background-color: slateblue;
+    width: 500px;
+    height: 250px;
+    padding: 25px 35px;
+    border-radius: 12px;
+    margin-top: 9%;
+    font-size: x-large;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input {
+    text-align: center;
+    border-radius: 50px;
+    border: 0 solid;
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn {
+    margin-top: 20px;
+    width: 500px;
+    height: 50px;
+    border-radius: 50px;
+    border: 0 solid;
+    color: gray;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: white;
+    background-color: aqua;
+}
+
+
+.title {
+    display: inline;
+    margin-left: 35px;
+}
+
+.find {
+    width: 100%;
+    height: 40px;
+}
+
+.heading {
+    padding: 60px 0px;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.browse {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    cursor: pointer;
+}
+
+.fields {
+    background-color: slateblue;
+    border: 10px solid rgb(153, 100, 231);
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.fields:hover {
+    border: 10px solid darkgray;
+}
+
+.fields i {
+    font-size: 35px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.fields p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.about-section {
+    width: auto;
+    height: 440px;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.first-box {
+    overflow: hidden;
+}
+
+.first-box img {
+    width: 100%;
+    height: 100%;
+    margin-left: -0.2px;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.julia-ward {
+    position: relative;
+    bottom: 35%;
+    left: 30%;
+    background: #5C46D3;
+    color: white;
+    padding: 20px 25px;
+    border-radius: 20px;
+    width: 120px;
+    height: 70px;
+    font-size: 25px;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 35px;
+}
+
+.julia-ward p {
+    font-size: 18px;
+    margin: 0;
+
+}
+
+.middle-box {
+    padding: 20px 25px;
+    width: 100%;
+    color: white;
+    height: 86.5%;
+    background-color: rgb(0, 234, 255);
+    align-items: center;
+    padding: 30px;
+}
+
+.middle-box h2 {
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.middle-box p {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.last-box {
+    overflow: hidden;
+}
+
+.last-box img {
+    width: 100%;
+    height: 100%;
+    margin-left: -0.2px;
+    object-fit: cover;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.featured-jobs {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.featured-jobs h1 {
+    font-size: 35px;
+    margin-top: 45px;
+    padding: 20px 25px;
+}
+
+.featured-jobs p {
+    line-height: 35px;
+    font-size: 20px;
+    color: grey;
+}
+
+.featured-jobs b {
+    color: rgb(79, 79, 79);
+}
+
+.job-container {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 35px;
+    margin: 0;
+}
+
+.main1 {
+    display: flex;
+    gap: 40px;
+    margin-left: 20px;
+    align-items: center;
+    padding: 30px 35px;
+    border-radius: 12px;
+    max-width: 100%;
+    height: 100px;
+    cursor: pointer;
+}
+
+
+.info-card h2 {
+    font-size: 35px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.info-card h2:hover {
+    color: orangered;
+}
+
+.logos {
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 70px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.main1:hover {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.246);
+
+}
+
+.logos i {
+    color: #5C46D3;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(0, 234, 255);
+}
+
+.internship {
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    background: #5C46D3;
+    color: white;
+    border-radius: 17px;
+    font-size: 16px;
+    margin: 0;
+    cursor: pointer;
+    align-items: center;
+}
+
+.internship:hover {
+    background: orangered;
+}
+
+.freelance {
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 17px;
+    background: #f4f4f5;
+    color: #5C46D3;
+    font-size: 16px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.freelance:hover {
+    background: orangered;
+}
+
+.apply-now {
+    background: orangered;
+    color: white;
+    font-size: 17px;
+    width: 130px;
+    height: 50px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+    max-width: 100%;
+    height: 50px;
+    padding: 20px 25px;
+}
+
+.pages a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    color: gray;
+    border-radius: 50%;
+
+
+}
+
+.prev {
+    color: gray;
+    background: rgb(0, 234, 255);
+}
+
+.pages a:hover {
+    color: white;
+    background-color: rgb(0, 234, 255);
+}
+
+.intro {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    border-radius: 28px;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.first-img {
+    background: #5b4bc4;
+    color: white;
+    padding: 60px;
+}
+
+.first-img h2 {
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.first-img p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.second-img {
+    position: relative;
+    color: white;
+}
+
+.second-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: -0.2px;
+}
+
+.million {
+    width: 40px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    text-align: center;
+}
+
+.recent-jobs {
+    max-width: 45%;
+    line-height: 20px;
+    padding: 20px 25px;
+}
+
+.recent-jobs h1 {
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.recent-jobs p {
+    font-size: 15px;
+    line-height: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: gray;
+}
+
+.recent-jobs b {
+    color: rgb(65, 65, 65);
+}
+
+
+.different-jobs {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding: 20px 25px;
+
+}
+
+.technical-lead {
+    background-color: white;
+    width: 100%;
+    height: 550px;
+    border-radius: 12px;
+}
+
+.technical-lead img {
+    border-radius: 12px;
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+    margin-left: -0.2px;
+}
+
+.technical-lead:hover {
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.246);
+    cursor: pointer;
+}
+
+.arrange {
+    padding: 20px 25px;
+    font-size: 20px;
+    max-width: 100%;
+}
+
+.arrange h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.items img {
+    padding: 2.5px 5px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+
+}
+
+.items {
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+}
+
+.bi-bookmark {
+
+    font-size: 15px;
+    margin-left: 90px;
+    color: #5b4bc4;
+    cursor: pointer;
+}
+
+.bi-heart {
+    font-size: 15px;
+    color: #5b4bc4;
+    cursor: pointer;
+}
+
+.bi:hover {
+    color: orangered;
+}
+
+.items2 {
+    margin-top: 20px;
+    font-size: 16px;
+    display: flex;
+    gap: 15%;
+    color: grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bi-geo-alt,
+.bi-clock {
+    color: #5b4bc4;
+}
+
+.bi-cash-stack {
+    margin-top: 20px;
+    font-size: 17px;
+    color: #5b4bc4;
+}
+
+.items3 {
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.button1 {
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    background: orangered;
+    color: white;
+    border-radius: 17px;
+    font-size: 16px;
+    margin: 0;
+    cursor: pointer;
+    align-items: center;
+}
+
+.button2 button {
+    width: 270px;
+    height: 70px;
+    border-radius: 50px;
+    font-size: 23px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: orangered;
+}
+
+.button2 {
+    display: flex;
+    justify-content: right;
+    text-align: center;
+}
+
+.cta-section {
+    width: 100%;
+    height: 45vh;
+    background: url("task1/millennial-group-young-businesspeople.jpg.jpeg");
+    object-fit: cover;
+    position: relative;
+    border-radius: 20px;
+}
+
+.cta-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 42, 0, 0.67);
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.cta-content {
+    width: 50%;
+    padding-left: 80px;
+    color: white;
+}
+
+.cta-content h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.cta-content p {
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 520px;
+}
+
+.cta-buttons {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cta-buttons a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.footer {
+    background: #fff;
+    padding: 60px 80px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+.footer-brand h2 {
+    color: #4f46e5;
+    font-size: 32px;
+}
+
+.tagline {
+    color: #ff5a3c;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer-brand p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+
+.footer-links h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    display: block;
+    color: #555;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+
+
+.newsletter {
+    background: #f1f7ff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+}
+
+.newsletter h3 {
+    margin-bottom: 15px;
+}
+
+.news-title {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 30px;
+    padding: 8px 12px;
+}
+
+.input-box input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+}
+
+.input-box button {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}

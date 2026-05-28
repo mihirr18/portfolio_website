@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Project</title>
+    <link rel="stylesheet" href="iotproject.css">
+</head>
+
+<body>
+
+    <section class="iot-project">
+
+        <div class="project-container">
+
+            <h1>IoT Smart Light Blinking System</h1>
+
+            <hr>
+
+            <div class="project-image">
+                <img src="task1/iotproject_photo.jpeg" alt="IoT Smart Light Blinking System">
+            </div>
+
+            <p>
+                Developed an IoT-based smart light blinking project using ESP32 and IR sensor modules.
+                The system automatically detects objects and controls LED blinking through programmed
+                microcontroller logic.
+            </p>
+
+            <p>
+                Implemented sensor interfacing, circuit connections, and embedded programming
+                for automation functionality.
+            </p>
+
+            <h2>Features :-</h2>
+
+            <ul>
+                <li>Automatic light blinking</li>
+                <li>Smart sensor detection</li>
+                <li>Low power consumption</li>
+                <li>IoT-enabled hardware</li>
+                <li>Easy wireless programming using ESP32</li>
+            </ul>
+
+            <h2>ESP32 Code :-</h2>
+
+            <pre>
+#define sensorPin 4
+#define ledPin 2
+
+void setup() {
+
+  pinMode(sensorPin, INPUT);
+  pinMode(ledPin, OUTPUT);
+
+  Serial.begin(115200);
+}
+
+void loop() {
+
+  int sensorValue = digitalRead(sensorPin);
+
+  if (sensorValue == LOW) {
+
+    Serial.println("Object Detected");
+
+    digitalWrite(ledPin, HIGH);
+    delay(500);
+
+    digitalWrite(ledPin, LOW);
+    delay(500);
+  }
+
+  else {
+
+    Serial.println("No Object");
+
+    digitalWrite(ledPin, LOW);
+  }
+}
+</pre>
+
+            <h2>Connections :-</h2>
+
+            <table>
+
+                <tr>
+                    <th>IR Sensor</th>
+                    <th>ESP32</th>
+                </tr>
+
+                <tr>
+                    <td>VCC</td>
+                    <td>3.3V</td>
+                </tr>
+
+                <tr>
+                    <td>GND</td>
+                    <td>GND</td>
+                </tr>
+
+                <tr>
+                    <td>OUT</td>
+                    <td>D4</td>
+                </tr>
+
+            </table>
+
+            <br>
+
+            <table>
+
+                <tr>
+                    <th>LED</th>
+                    <th>ESP32</th>
+                </tr>
+
+                <tr>
+                    <td>Positive</td>
+                    <td>D2</td>
+                </tr>
+
+                <tr>
+                    <td>Negative</td>
+                    <td>GND</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

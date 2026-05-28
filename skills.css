@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.main-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo a {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.logo a:hover {
+    color: rgb(0, 122, 252);
+}
+
+.items {
+    display: flex;
+    gap: 60px;
+    font-size: 18px;
+}
+
+.items a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.items a:hover {
+    color: rgb(0, 122, 252);
+}
+
+/* HERO SECTION */
+
+.my-introduction {
+    position: relative;
+}
+
+.hero {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.about-me {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: black;
+    line-height: 2.8rem;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about-me b {
+    color: rgb(0, 122, 252);
+}
+
+.about-me hr {
+    width: 40%;
+    border-color: rgb(0, 122, 252);
+    opacity: 0.4;
+    margin-top: 10px;
+}
+
+/* BUTTONS */
+
+.buttons {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.buttons a {
+    width: 150px;
+    height: 35px;
+    background-color: rgb(0, 122, 252);
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+#btn {
+    background-color: white;
+    color: rgb(0, 122, 252);
+    border: 1px solid rgb(0, 122, 252);
+}
+
+.buttons a:hover {
+    transform: translateY(-5px);
+}
+
+/* SKILLS */
+
+.skills-box,
+.tools-box {
+    width: 100%;
+    background-color: rgb(222, 238, 255);
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.skills-box h1,
+.tools-box h1 {
+    color: rgb(0, 122, 252);
+}
+
+.skills-box hr,
+.tools-box hr {
+    margin-top: 10px;
+    border-color: rgb(0, 122, 252);
+    opacity: 0.4;
+}
+
+/* CARDS */
+
+.skills-card,
+.tools-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+}
+
+.skills,
+.tools {
+    width: 170px;
+    height: 70px;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.skills:hover,
+.tools:hover {
+    transform: translateY(-8px);
+    background-color: rgb(0, 122, 252);
+}
+
+.skills a,
+.tools a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.skills a:hover,
+.tools a:hover {
+    color: white;
+}
+
+.skills img,
+.tools img {
+    width: 35px;
+    height: 35px;
+}
+
+.skills p,
+.tools p {
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px) {
+
+    .navbar {
+        height: auto;
+    }
+
+    .main-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .items {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .about-me {
+        position: static;
+        transform: none;
+        text-align: center;
+        padding: 20px;
+        font-size: 16px;
+        line-height: 2rem;
+    }
+
+    .about-me hr {
+        margin: 10px auto;
+    }
+
+    .buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .skills,
+    .tools {
+        width: 140px;
+        height: 60px;
+    }
+
+    .skills img,
+    .tools img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .skills p,
+    .tools p {
+        font-size: 13px;
+    }
+}
